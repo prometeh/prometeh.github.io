@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "description": "a personal portfolio",
+  "scripts": {
+    "front-dev": "parcel ./src/front-end/index.html",
+    "front-deploy": "rm -rf dis && parcel build ./src/front-end/index.html --public-url ./ && gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "Ushi",
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "parcel": "^2.6.2",
+    "sharp": "^0.29.3"
+  }
+}
