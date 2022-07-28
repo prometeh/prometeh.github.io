@@ -121,8 +121,9 @@ footer {
 
 .title {
   color: #fefefe;
+  background: linear-gradient(90deg, #252525 41%, #fefefe -100%);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(90deg, #252525 41%, #fefefe -100%) text;
   padding: .5rem;
   font-size: 3rem;
   font-weight: bolder;
