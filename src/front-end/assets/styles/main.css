@@ -137,7 +137,7 @@ footer {
   font-weight: bolder;
   color: #fefefe;
   background: linear-gradient(90deg, #252525 41%, #fefefe -100%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
