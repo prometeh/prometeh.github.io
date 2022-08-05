@@ -71,7 +71,7 @@ footer {
   background-color: #161616;
   border-radius: 10px;
   position: relative;
-  cursor: pointer;
+  user-select: none;
 }
 
 .logo > p {
