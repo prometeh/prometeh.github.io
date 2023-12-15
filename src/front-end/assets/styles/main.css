@@ -2,6 +2,7 @@
    to border-box value */
 html {
   box-sizing: border-box;
+  min-height: 100%;
 }
 
 *,
@@ -13,6 +14,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 100vh;
   background-color: #2c2c2c;
   background: linear-gradient(217deg, #035a75cc, #0ad4b800 70.71%),
@@ -51,11 +55,18 @@ ul {
   min-width: max-content;
 }
 
+ol {
+  list-style-type: disc;
+  margin-left: 2rem;
+  padding: 0.5rem;
+}
+
 nav > ul > li {
   margin: 0 1rem;
 }
 
 footer {
+  width: 100%;
   padding: 2rem;
   display: flex;
   justify-content: space-between;
@@ -76,7 +87,10 @@ footer {
 
 .logo > p {
   font-size: 15px;
-  text-shadow: 1px 1px 2px green, 0 0 1em greenyellow, 0 0 0.2em blue;
+  text-shadow:
+    1px 1px 2px green,
+    0 0 1em greenyellow,
+    0 0 0.2em blue;
   font-weight: bolder;
   position: absolute;
   top: 0.5rem;
@@ -95,12 +109,20 @@ footer {
   padding: 0.4rem;
   margin: 2rem 0.5rem;
   border-radius: 0.2rem;
-  max-width: 90%;
+  width: 90%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 .profile-pic {
-  float: right;
-  width: 150px;
+  width: 99%;
+  aspect-ratio: "19:9";
+  border-radius: 5px;
   margin: 0.5rem;
 }
 
@@ -137,7 +159,7 @@ footer {
   font-weight: bolder;
   color: #fefefe;
   background: linear-gradient(90deg, #252525 41%, #fefefe -100%);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -201,7 +223,11 @@ footer {
   transition: 100ms linear;
 }
 
-@media screen and (min-width: 600px) {
+#cert_link {
+  color: aqua;
+}
+
+@media screen and (min-width: 750px) {
   section,
   header,
   nav > ul {
@@ -209,7 +235,13 @@ footer {
   }
 
   .profile-pic {
-    width: 250px;
+    max-width: 250px;
+    align-self: self-start;
+  }
+
+  .content {
+    flex-direction: row-reverse;
+    align-items: start;
   }
 
   .projects {
