@@ -174,11 +174,12 @@ footer {
 .project-tab {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
 .project-title {
   font-size: 1.4rem;
+  width: max-content;
   margin: 0;
 }
 
@@ -191,7 +192,7 @@ footer {
 .project-tags,
 .project-links {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   margin: 0;
   padding: 0;
 }
