@@ -147,7 +147,7 @@ footer {
 
 .title-background {
   background: #252525;
-  background: linear-gradient(90deg, #fefefe 41%, #252525 -100%);
+  background: linear-gradient(90deg, #fefefe 42%, #252525 -100%);
   border-radius: 0.2rem;
   align-self: start;
   margin: 0 5%;
@@ -158,7 +158,7 @@ footer {
   font-size: 3rem;
   font-weight: bolder;
   color: #fefefe;
-  background: linear-gradient(90deg, #252525 41%, #fefefe -100%);
+  background: linear-gradient(90deg, #252525 42%, #fefefe -100%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
