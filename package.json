@@ -4,7 +4,7 @@
   "description": "a personal portfolio",
   "scripts": {
     "front-dev": "parcel ./src/front-end/index.html",
-    "front-deploy": "rm -rf dist && parcel build ./src/front-end/index.html --public-url ./ && gh-pages -d dist"
+    "front-deploy": "rm -rf dist && parcel build ./src/front-end/index.html --public-url ./ && gh-pages -d dist -r git@github.com:prometeh/prometeh.github.io.git "
   },
   "keywords": [],
   "author": "Ushi",
