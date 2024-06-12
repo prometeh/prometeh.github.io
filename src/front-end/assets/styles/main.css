@@ -116,7 +116,7 @@ footer {
 .profile-pic {
   float: right;
   width: 99%;
-  max-width: 250px;
+  max-width: 150px;
   aspect-ratio: "19:9";
   border-radius: 5px;
   margin: 0.5rem;
@@ -164,25 +164,18 @@ footer {
 }
 
 .project {
-  width: 90%;
+  width: 95%;
 }
 
 .project-tab {
   display: flex;
-  justify-content: space-between;
-  align-items: baseline;
+  flex-direction: column;
 }
 
 .project-title {
   font-size: 1.4rem;
-  width: max-content;
+  max-width: fit-content;
   margin: 0;
-}
-
-.project-links-n-tags {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
 }
 
 .project-tags,
@@ -190,7 +183,6 @@ footer {
   display: flex;
   justify-content: end;
   margin: 0;
-  padding: 0;
 }
 
 .fancy-btn {
@@ -229,6 +221,10 @@ footer {
   header,
   nav > ul {
     flex-direction: row;
+  }
+
+  .profile-pic {
+    max-width: 250px;
   }
 
   .projects {
